@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
+   <center>
+      <TableView fx:id="tableView_chatList" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Pane minHeight="50.0" prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="190.0" layoutY="9.0" mnemonicParsing="false" onAction="#onclickMakeNewChat" text="새 채팅방" />
+            <Button layoutX="5.0" layoutY="9.0" mnemonicParsing="false" onAction="#onclickRefresh" text="새로고침" />
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <Pane minHeight="50.0" prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="4.0" layoutY="15.0" text="서버주소" />
+            <TextField fx:id="textField_ip" layoutX="81.0" layoutY="9.0" prefHeight="33.0" prefWidth="138.0" />
+            <Button layoutX="219.0" layoutY="9.0" mnemonicParsing="false" onAction="#onclickConnect" prefHeight="33.0" prefWidth="76.0" text="접속" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

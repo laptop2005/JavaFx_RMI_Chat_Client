@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ChatController">
+   <top>
+      <Pane minHeight="50.0" prefHeight="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="label_chat" layoutX="14.0" layoutY="15.0" text="채팅방이름:" />
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane minHeight="50.0" prefHeight="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textField_message" layoutX="97.0" layoutY="9.0" prefHeight="33.0" prefWidth="217.0" />
+            <Button layoutX="315.0" layoutY="9.0" mnemonicParsing="false" onAction="#onclickSend" text="전송" />
+            <TextField fx:id="textField_nickName" layoutX="14.0" layoutY="9.0" prefHeight="33.0" prefWidth="80.0" />
+         </children>
+      </Pane>
+   </bottom>
+   <center>
+      <TextArea fx:id="textArea_chat" editable="false" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
